@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Using DOM selection</title>
+	<link rel="stylesheet" href="">
+
+	<style type="text/css">
+
+		ol>li{
+			display: inline;
+			font-family: 'arial';
+		}
+
+		.listItem{
+			color: #a0294c;
+			font-weight: bolder;
+			list-style: disc;
+		}
+
+		.display{
+			background-color: #fca27e;
+			font-size: 1.6em;
+		}
+		
+		.links{
+			text-decoration: none;
+			line-height: 40px;
+			margin:10px 10px 0 10px ;
+		}
+
+	</style>
+
+</head>
+
+
+<body>
+
+
+	<div>
+		<ol class="display">
+			<li><a href="" class="links" id="countlink">Count</a></li>
+			<li><a href="" class="links">Contact</a></li>
+			<li><a href="" class="links">Client</a></li>
+			<li><a href="" class="links">Download</a></li>
+		</ol>
+		<ul class="listItem" id="list">
+			<li>Javascript</li><li>css</li>
+			<li>html</li>
+			<li>nodeJs</li>
+		</ul>
+	</div>
+	<div id="output"></div>
+	<script type="text/javascript" src="scripts/domSelection.js"></script>
+
+</body>
+</html>
